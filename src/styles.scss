@@ -1,1 +1,41 @@
 /* You can add global styles to this file, and also import other style files */
+@import "~@ng-select/ng-select/themes/default.theme.css";
+
+$font-color: #2c3e50;
+
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "open sans", sans-serif;
+  color: $font-color;
+}
+
+.owl-dt-container {
+  z-index: 9999 !important;
+}
+.cdk-overlay-container {
+  position: fixed;
+  pointer-events: none;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  position: absolute;
+  z-index: 9999999 !important;
+}
+.cdk-global-overlay-wrapper, .cdk-overlay-container {
+  pointer-events: none;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  position: absolute;
+  z-index: 9999999 !important;
+}
